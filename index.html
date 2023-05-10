@@ -22,9 +22,9 @@
   </head>
   <body>
     <!-- Modal -->
-    <div class="backdrop is-hidden">
+    <div data-modal class="backdrop is-hidden">
       <div class="modal">
-        <button class="button-close">
+        <button data-modal-close class="button-close">
           <svg class="icon" width="8px" height="8px">
             <use href="./images/icons.svg#icon-close"></use>
           </svg>
@@ -71,7 +71,9 @@
       <section class="hero">
         <div class="container">
           <h1 class="hero-title">Effective Solutions for Your Business</h1>
-          <button type="button" class="hero-btn">Order Service</button>
+          <button data-modal-open type="button" class="hero-btn">
+            Order Service
+          </button>
         </div>
       </section>
 
@@ -445,5 +447,6 @@
         </div>
       </div>
     </footer>
+    <script src="./js/modal.js"></script>
   </body>
 </html>

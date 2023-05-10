@@ -103,6 +103,8 @@ p {
    margin-left: auto;
 
    background-color: var(--border-color);
+
+   cursor:pointer;
    
 }
 /* Header */
