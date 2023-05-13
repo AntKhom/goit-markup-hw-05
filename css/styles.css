@@ -169,7 +169,7 @@ p {
     border-radius: 2px;
 
     position: absolute; 
-    bottom: 0;
+    bottom: -1px;
     left:0;
     transform: scaleX(0);
     /* opacity: 0; */
@@ -202,6 +202,8 @@ p {
     font-weight: 500;
     font-size: 16px;
     line-height: 1.5;
+
+    transition: color 250ms var(--time-function);
 
 }
 
@@ -236,6 +238,8 @@ p {
 
 .info .link {
     color: var(--primary-text-color);
+
+    transition: transform 250ms var(--time-function);
     
 }
 
@@ -298,6 +302,8 @@ p {
     line-height: 1.5;
     letter-spacing: 0.04em;
     cursor: pointer;
+
+    transition: background-color 250ms var(--time-function);
 
 }
 
@@ -478,6 +484,8 @@ p {
     height: 40px;
     border-radius: 50%;
     background-color: var(--links-text-color);
+
+    transition: bacground-color 250ms var(--time-function);
 }
 
 .list-social .icon {
@@ -525,6 +533,7 @@ p {
     border: 1px solid #8e8f99;
     border-radius: 4px;
     color:#8e8f99;
+    transition: border-color 250ms var(--time-function);
 }
 
 .customers .icon {
@@ -591,6 +600,8 @@ p {
     display: flex;
     align-items: center;
     justify-content: center;
+
+    transition: background-color 250ms var(--time-function);
 }
 
 .footer-social .link:hover,
@@ -632,6 +643,11 @@ p {
     border: 1px solid var(--border-color);
     border-radius: 4px;
     cursor: pointer;
+
+    transition: background-color 250ms var(--time-function),
+                color 250ms var(--time-function),
+                border 250ms var(--time-function),
+                box-shadow 250ms var(--time-function);
 }
 
 .portfolio .btn:hover,
@@ -664,6 +680,8 @@ p {
 
 .type-work .link {
     display: block;
+
+    transition: box-shadow 250ms var(--time-function)
 }
 
 .type-work .link:hover,
