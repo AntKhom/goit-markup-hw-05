@@ -761,7 +761,7 @@ p {
 
     transition: background-color 250ms var(--time-function),
                 border 250ms var(--time-function)
-                color 250ms var(--time-function);
+                /* color 250ms var(--time-function); */
 
 }
 .button-close .icon {
