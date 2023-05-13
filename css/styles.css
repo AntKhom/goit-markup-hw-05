@@ -65,8 +65,8 @@ p {
     position:fixed;
     top: 0;
     left: 0;
-    width: 100%;
-    height: 100%;
+    width: 100vh;
+    height: 100vh;
     background-color: rgba(46, 47, 66, 0.4);
 }
 
@@ -183,7 +183,8 @@ p {
 }
 
 
-.navigation .link:hover::after {
+.navigation .link:hover::after,
+.navigation .link:focus::after  {
     /* opacity: 1; */
     transform: scaleX(1);
 }
@@ -696,6 +697,7 @@ p {
 
 .portfolio .thumb {
     position: relative;
+    overflow: hidden;
 }
 
 .portfolio .text.overlay {
@@ -704,18 +706,25 @@ p {
     left: 0;
     width: 100%;
     height: 100%;
+
     padding-top: 40px;
     padding-left: 32px;
     padding-right: 32px;
+
     background-color: var(--links-text-color);
     color: var(--primary-white-color);
+    
     font-weight: 400;
     font-size: 16px;
     line-height: 1.5;
     letter-spacing: 0.02em;
-    opacity: 0;
+    /* opacity: 0; */
+    transform: translateY(100%);
+    transition: transform 250ms var(--time-function);
+
 }
 
-.portfolio .text.overlay:hover {
-    opacity: 1;
+.type-work .link:hover .text.overlay,
+.type-work .link:focus .text.overlay {
+    transform: translateY(0);
 }
