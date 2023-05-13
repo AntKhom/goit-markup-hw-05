@@ -179,18 +179,14 @@ p {
     /* margin-right: 40px; */
     transition: color 250ms var(--time-function);
     /* outline: 1px solid teal; */
+    color: var(--primary-text-color);
+    
 }
 
 .info .item:not(:last-child) {
     margin-right: 40px;
 }
 
-.info .link {
-    color: var(--primary-text-color);
-
-    transition: transform 250ms var(--time-function);
-    
-}
 
 .info .link:hover,
 .info .link:focus {
@@ -764,7 +760,7 @@ p {
     border:1px solid rgba(0, 0, 0, 0.1);
 
     transition: background-color 250ms var(--time-function),
-                border-color 250ms var(--time-function)
+                border 250ms var(--time-function)
                 color 250ms var(--time-function);
 
 }
